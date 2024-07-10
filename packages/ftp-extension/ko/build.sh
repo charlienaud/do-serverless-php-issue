@@ -2,4 +2,4 @@
 
 set -e
 
-composer install --no-dev --optimize-autoloader
+composer install --no-dev --optimize-autoloader --ignore-platform-req=ext-ftp
