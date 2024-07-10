@@ -1,0 +1,16 @@
+parameters: {}
+environment: {}
+packages:
+
+    - name: ftp-extension
+      functions:
+        - name: ok
+          runtime: php:8.0
+          limits:
+            timeout: 300000 # max 5 minutes
+            memory: 128
+        - name: ko
+          runtime: php:8.2
+          limits:
+            timeout: 300000 # max 5 minutes
+            memory: 128

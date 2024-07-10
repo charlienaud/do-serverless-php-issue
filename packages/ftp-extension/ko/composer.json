@@ -1,0 +1,6 @@
+{
+    "name": "charlie/hello",
+    "require": {
+        "ext-ftp": "*"
+    }
+}
