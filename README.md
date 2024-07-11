@@ -38,3 +38,11 @@ To enable extensions, verify that they are enabled in your .ini files:
 You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
 Alternatively, you can run Composer with `--ignore-platform-req=ext-ftp` to temporarily ignore these required extensions.
 ```
+
+## Why?
+
+Related to [this change](https://github.com/docker-library/php/issues/1488) in the PHP image used by DO.
+
+`ext-ftp` is no longer installed by default.
+
+> As DO doesn't allow you to install any extensions other than those supplied by default, the only solution is to downgrade the runtime to `php:8.0`
